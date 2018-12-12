@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin xmlns="" id="test-plugin-ram" version="1.0.0" >
+    <name>Test</name>
+    <description>This plugin only display a message</description>
+    <author>ram mehta</author>
+    <keywords>plugin, cordova, android, test, ram mehta</keywords>
+    <license>Apache 2.0 License</license>
+
+    <engines>
+        <engine name="cordova" version=">=3.4.0"/>
+    </engines>
+
+    <asset src="www/test.js" target="js/test.js"/>
+
+    <js-module src="www/test.js" name="Test">
+        <clobbers target="ram.test"/>
+    </js-module>
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="Test">
+                <param name="android-package" value="com.ram.plugin.Test"/>
+            </feature>
+        </config-file>
+        <source-file src="src/android/Test.java" target-dir="src/com/ram/plugin/"/>
+    </platform>
+</plugin>
