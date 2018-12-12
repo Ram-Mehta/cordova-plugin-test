@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" id="com.ram.test" version="1.0.0" >
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" id="cordova-plugin-test" version="1.0.0" >
     <name>Test</name>
     <description>This plugin only display a message</description>
     <author>ram mehta</author>
