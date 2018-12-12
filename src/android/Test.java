@@ -7,7 +7,7 @@ import org.json.JSONException;
 public class Test extends CordovaPlugin {
 
     @override
-    public boolean execute(String action, JSONArray data, CallbackContext, callbackContext) extends JSONException {
+    public boolean execute(String action, JSONArray data, CallbackContext callbackContext) throws JSONException {
 
         if (action.equals("greet")) {
 
