@@ -14,7 +14,7 @@
     <asset src="www/test.js" target="js/test.js"/>
 
     <js-module src="www/test.js" name="test">
-        <clobbers target="test"/>
+        <clobbers target="Test"/>
     </js-module>
     <platform name="android">
         <config-file target="res/xml/config.xml" parent="/*">
